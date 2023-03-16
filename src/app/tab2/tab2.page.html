@@ -14,11 +14,21 @@
       <ion-card-subtitle>
         <ion-grid>
           <ion-row>
-            <ion-col><ion-button color="secondary" >1</ion-button></ion-col>
-            <ion-col><ion-button color="secondary" >3</ion-button></ion-col>
-            <ion-col><ion-button color="secondary" >6</ion-button></ion-col>
-            <ion-col><ion-button color="secondary" >9</ion-button></ion-col>
-            <ion-col><ion-button color="secondary" >12</ion-button></ion-col>
+            <ion-col>
+              <ion-button class="tamanho" color="secondary">1</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button color="secondary">3</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button color="secondary">6</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button color="secondary">9</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button color="secondary">12</ion-button>
+            </ion-col>
           </ion-row>
         </ion-grid>
 
@@ -27,27 +37,56 @@
 
   </ion-card>
 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+        <ion-col size="6" class="centro">
+          <ion-card>
+            <h1>Time 1:</h1>
+            <div>
+              <ion-button color="secondary">+</ion-button>
+            </div>
+            <h1>0</h1>
+            <div>
+              <ion-button color="secondary">-</ion-button>
+            </div>
+          </ion-card>
+        </ion-col>
+
+      </ion-col>
+
+      <ion-col>
+
+        <ion-col size="6" class="centro">
+          <ion-card>
+            <h1>Time 2:</h1>
+            <div>
+              <ion-button color="secondary">+</ion-button>
+            </div>
+            <h1>0</h1>
+            <div>
+              <ion-button color="secondary">-</ion-button>
+            </div>
+          </ion-card>
+        </ion-col>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
   <ion-card>
     <ion-card-header>
-      <div>
-      <ion-grid>
-        <ion-row>
-          <ion-col><h1>Time 1:</h1></ion-col>
-          <ion-col><h1>Time 2:</h1></ion-col>
-        </ion-row>
-      </ion-grid>
-    </div>
-    <div>
-      <ion-button class="mais" color="secondary">+</ion-button>
-      <ion-button class="maiss" color="secondary">+</ion-button>
-      <br>
-      <ion-button class="mais" color="secondary">-</ion-button>
-      <ion-button class="maiss" color="secondary">-</ion-button>
-    </div>
-
-
+      <ion-card-title>Partidas</ion-card-title>
+      <h1>Time1 => 0</h1>
+      <h1>Time2 => 0</h1>
     </ion-card-header>
-
   </ion-card>
+
+  <ion-button fill="outline" expand="block">Limpar</ion-button>
+
+
+
+
 
 </ion-content>
