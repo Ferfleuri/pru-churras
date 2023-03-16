@@ -10,24 +10,24 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Valendo => </ion-card-title>
+      <ion-card-title>Valendo => <span>{{valor}}</span> </ion-card-title>
       <ion-card-subtitle>
         <ion-grid>
           <ion-row>
             <ion-col>
-              <ion-button class="tamanho" color="secondary">1</ion-button>
+              <ion-button color="secondary" (click)=" pontoTime1()">1</ion-button>
             </ion-col>
             <ion-col>
-              <ion-button color="secondary">3</ion-button>
+              <ion-button color="secondary" (click)="pontoTime3()">3</ion-button>
             </ion-col>
             <ion-col>
-              <ion-button color="secondary">6</ion-button>
+              <ion-button color="secondary" (click)="pontoTime6()">6</ion-button>
             </ion-col>
             <ion-col>
-              <ion-button color="secondary">9</ion-button>
+              <ion-button color="secondary" (click)="pontoTime9()">9</ion-button>
             </ion-col>
             <ion-col>
-              <ion-button color="secondary">12</ion-button>
+              <ion-button color="secondary" (click)="pontoTime12()">12</ion-button>
             </ion-col>
           </ion-row>
         </ion-grid>
@@ -45,11 +45,11 @@
           <ion-card>
             <h1>Time 1:</h1>
             <div>
-              <ion-button color="secondary">+</ion-button>
+              <ion-button (click)="somarPontos()" color="secondary">+</ion-button>
             </div>
-            <h1>0</h1>
+            <h1>{{pontotime1}}</h1>
             <div>
-              <ion-button color="secondary">-</ion-button>
+              <ion-button (click)="subPontos()" color="secondary">-</ion-button>
             </div>
           </ion-card>
         </ion-col>
@@ -62,11 +62,11 @@
           <ion-card>
             <h1>Time 2:</h1>
             <div>
-              <ion-button color="secondary">+</ion-button>
+              <ion-button (click)="somarPontos2()" color="secondary">+</ion-button>
             </div>
-            <h1>0</h1>
+            <h1>{{pontotime2}}</h1>
             <div>
-              <ion-button color="secondary">-</ion-button>
+              <ion-button (click)="subPontos()" color="secondary">-</ion-button>
             </div>
           </ion-card>
         </ion-col>
@@ -78,12 +78,15 @@
   <ion-card>
     <ion-card-header>
       <ion-card-title>Partidas</ion-card-title>
-      <h1>Time1 => 0</h1>
-      <h1>Time2 => 0</h1>
+      <h1>Time1 => {{vitoriatime1}} </h1>
+      <h1>Time2 => {{vitoriatime2}} </h1>
     </ion-card-header>
   </ion-card>
 
-  <ion-button fill="outline" expand="block">Limpar</ion-button>
+  <ion-footer>
+    <ion-button fill="outline" expand="block">Limpar</ion-button>
+  </ion-footer>
+
 
 
 
