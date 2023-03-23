@@ -41,8 +41,8 @@ export class Tab2Page {
 
     this.pontotime1 += this.valor
     this.valor = 1
-    if (this.pontotime1 >= 13) {
-      this.vitoriatime1 + 1
+    if (this.pontotime1 >= 12) {
+      this.vitoriatime1 += 1
       this.pontotime1 = 0
       this.pontotime2 = 0
     }
@@ -61,8 +61,8 @@ export class Tab2Page {
 
     this.pontotime2 += this.valor
     this.valor = 1
-    if (this.pontotime2 >= 13) {
-      this.vitoriatime2 + 1
+    if (this.pontotime2 >= 12) {
+      this.vitoriatime2 += 1
       this.pontotime1 = 0
       this.pontotime2 = 0
     }
@@ -76,5 +76,14 @@ export class Tab2Page {
     }
   }
 
+  limparTudo(){
+    this.valor = 1;
+
+    this.pontotime1 = 0;
+    this.pontotime2 = 0;
+
+    this.vitoriatime1 = 0;
+    this.vitoriatime2 = 0;
+  }
 
 }

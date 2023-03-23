@@ -43,7 +43,7 @@
 
         <ion-col size="6" class="centro">
           <ion-card>
-            <h1>Time 1:</h1>
+            <h1>Time 1</h1>
             <div>
               <ion-button (click)="somarPontos()" color="secondary">+</ion-button>
             </div>
@@ -60,7 +60,7 @@
 
         <ion-col size="6" class="centro">
           <ion-card>
-            <h1>Time 2:</h1>
+            <h1>Time 2</h1>
             <div>
               <ion-button (click)="somarPontos2()" color="secondary">+</ion-button>
             </div>
@@ -78,13 +78,13 @@
   <ion-card>
     <ion-card-header>
       <ion-card-title>Partidas</ion-card-title>
-      <h1>Time1 => {{vitoriatime1}} </h1>
-      <h1>Time2 => {{vitoriatime2}} </h1>
+      <h1>Time 1 => {{vitoriatime1}} </h1>
+      <h1>Time 2 => {{vitoriatime2}} </h1>
     </ion-card-header>
   </ion-card>
 
   <ion-footer>
-    <ion-button fill="outline" expand="block">Limpar</ion-button>
+    <ion-button fill="outline" expand="block" (click)="limparTudo()">Limpar</ion-button>
   </ion-footer>
 
 
